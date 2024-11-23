@@ -1,0 +1,65 @@
+.heading {
+    display: flex;
+    margin: 40px;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 550;
+    position: relative;
+}
+
+.heading::before {
+    content: "";
+    position: absolute;
+    top: -20px; /* Position the line above the heading */
+    width: 100%; /* Full width */
+    height: 0.5px; /* Thickness of the line */
+    background-color: #e1e1e1; /* Mild gray line */
+    left: 0; /* Align to the left */
+    box-shadow: 0 2px 5px rgba(92, 92, 92, 0.5);
+}
+
+.ratingcontent{
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.address{
+    margin-top: 20px;
+}
+
+.star{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 2px;
+    margin-top: 3px;
+    color: orange;
+}
+
+.rating{
+    display: flex;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.restaurants {
+    display: flex; /* Use Flexbox layout */
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Add space between the cards */
+    margin: 20px; /* Optional: Add spacing around the whole container */
+}
+
+.sshyderabad:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.sshyderabad {
+    max-width: 300px; /* Set a consistent width for the cards */
+    background-color: #fff; /* Optional: Add a background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    padding: 15px; /* Optional: Add padding inside the card */
+    text-align: center; /* Center-align text inside the card */
+}

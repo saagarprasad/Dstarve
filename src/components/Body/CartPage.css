@@ -1,0 +1,236 @@
+/* .headings-list{
+    margin-top: 100px;
+}
+
+.cart-ul{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+
+.individualitems{
+    display: flex;
+    flex-direction: column;
+    gap: 1000px;
+}
+
+
+.individualimgitems{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-images{
+    width: 70px;
+    height: 60px;
+}
+
+ */
+
+.headings-list{
+    margin-top: 100px;
+}
+
+
+.cart-ul{
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    margin-left: 120px;
+    max-width: 1000px;
+    max-height: 180px;
+    border: 2px solid rgba(0, 0, 0, 0.01); /* Semi-transparent black border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+    border-radius: 10px; /* Optional: rounded corners for a polished look */
+}
+
+.cart-images{
+    width: 250px;
+    height: 180px;
+}
+
+.dishnamestyle{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.quantitybtn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    font-size: 12px; /* Smaller font size */
+    padding: 5px 5px; /* Adjust padding to control width */
+    width: 40px; /* Let width adjust based on content */
+    height: 30px; /* Fixed height for the button */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 184, 0); /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 7px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Optional: Hover effect for better interactivity */
+.quantitybtn:hover {
+    background-color: orange; /* Darker blue on hover */
+}
+
+.quantityvalue{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.upanddown{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.upanddowndatas{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inbetween{
+    display: flex;
+    gap: 250px;
+}
+
+.loweropa{
+    opacity: 0.7;
+}
+
+.individualitems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quantityitemsdump{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.deletebtn{
+    margin-top: 10px;
+}
+
+.deletebtn:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.offer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: red;
+}
+
+.subtotal{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 900px;
+}
+
+.quantitykilmabtn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    font-size: 12px; /* Smaller font size */
+    padding: 5px 5px; /* Adjust padding to control width */
+    width: 40px; /* Let width adjust based on content */
+    height: 30px; /* Fixed height for the button */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 219, 219); /* Blue background color */
+    color: black; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 7px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Optional: Hover effect for better interactivity */
+.quantitykilmabtn:hover {
+    background-color: orange; /* Darker blue on hover */
+}
+
+.emptycart{
+    display: flex;
+    font-size: 800;
+    font-weight: 400;
+    opacity: 0.7;
+    /* margin-top: 200px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.sidecartpage {
+    position: fixed;
+    top: 100px; /* Adjust based on your page layout */
+    right: 0;
+    width: 300px; /* Define the width of the side menu */
+    height: 100vh;
+    padding: 20px;
+    background-color: white; /* Change the background color as needed */
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+    border-left: 1px solid rgba(0, 0, 0, 0.1); /* Optional border for separation */
+    z-index: 10; /* Ensure it stays above other elements */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.lightingbtn {
+    width: 100%; /* Full width for the button */
+    padding: 10px;
+    background-color: rgb(9, 184, 0); /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lightingbtn:hover {
+    background-color: orange; /* Button hover effect */
+}
+
+.nonlightingbtn {
+    width: 100%; /* Full width for the button */
+    padding: 10px;
+    background-color: rgb(221, 221, 221); /* Button background color */
+    color: rgb(119, 119, 119); /* Button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nonlightingbtn:hover {
+    background-color: rgb(221, 221, 221);;
+    color: rgb(119, 119, 119); /* Button hover effect */
+}
+
+.totaltext{
+    font-weight: 500;
+    font-size: larger;
+}
+
+
+
+
+

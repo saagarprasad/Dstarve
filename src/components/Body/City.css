@@ -1,0 +1,44 @@
+.heading {
+    display: flex;
+    margin: 40px;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 550;
+    position: relative;
+}
+
+.heading::before {
+    content: "";
+    position: absolute;
+    top: -20px; /* Position the line above the heading */
+    width: 100%; /* Full width */
+    height: 0.5px; /* Thickness of the line */
+    background-color: #e1e1e1; /* Mild gray line */
+    left: 0; /* Align to the left */
+    box-shadow: 0 2px 5px rgba(92, 92, 92, 0.5);
+}
+
+.city-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line */
+    justify-content: center; /* Centers the buttons */
+    gap: 20px; /* Adds a gap between buttons */
+    margin: 20px auto; /* Adds margin for spacing */
+    max-width: 2000px; /* Restricts the container width */
+}
+
+button {
+    padding: 20px 50px;
+    border-radius: 5px;
+    font-size: 16px; /* Optional: Adjust font size for better readability */
+    border: 1px solid #ccc; /* Optional: Add border styling */
+    background-color: #f9f9f9; /* Optional: Background color */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Optional: Adds smooth hover effect */
+}
+
+button:hover {
+    background-color: orange; /* Changes background on hover */
+    color: white; /* Changes text color on hover */
+    transform: translateY(-2px); /* Adds a slight lifting effect */
+}

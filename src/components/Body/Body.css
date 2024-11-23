@@ -1,0 +1,66 @@
+.body {
+    background-color: #f9f9f9;
+    background-image: url('bg2.jpg'); /* Adjust path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    
+}
+
+
+.tagline {
+    font-size: 50px;
+    font-weight: 550;
+    color: #000000;
+    text-align: center; /* Just to center the text */
+    margin-top: 180px;
+}
+
+
+.search{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.searchBox {
+    padding: 15px 100px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin-top: 30px; /* Add some spacing between the tagline and search box */
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.searchBox:focus {
+    outline: none; /* Remove outline on focus */
+    border: 1px solid orange; /* Optional: change border color on focus */
+}
+
+.searchbtn {
+    display: flex;
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+    width: 60px;                 /* Adjust width */
+    height: 20px;                 /* Adjust height */
+    margin-top: 33px;
+    margin-bottom: 20px;
+    font-size: 13px;              /* Adjust font size */
+    text-align: center;           /* Ensure text alignment is centered */
+    border: 1px solid #ccc;       /* Optional: add border */
+    border-radius: 5px;           /* Optional: round corners */
+    background-color: #f0f0f0;    /* Optional: background color */
+}
+
+.wm{
+    margin: 40px;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 550;
+}

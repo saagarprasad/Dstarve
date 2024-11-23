@@ -1,0 +1,114 @@
+.getapp {
+    display: flex;
+    justify-content: flex-start; /* Align everything to the left */
+    align-items: center; /* Center the items vertically */
+    gap: 150px; /* Space between the phone container and the text content */
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.phone-container {
+    display: flex;
+    flex-direction: row; /* Stack phones vertically (optional: change to row for horizontal) */
+    gap: 1px; /* Reduce the space between the phones */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.phone2 {
+    width: 150px; /* Adjust size of phones to fit better */
+    height: 300px; /* Maintain aspect ratio */
+}
+
+.phone1{
+    width: 240px;
+    height: 330px;
+    padding-left: 300px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; /* Stack text and input vertically */
+    align-items: flex-start; /* Align text to the left */
+    max-width: 400px; /* Optional: Limit the width of the text block */
+}
+
+.get {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333; /* Optional: Add color for better readability */
+}
+
+.download{
+    font-weight: 1px;
+    opacity: 0.5;
+}
+
+.buttonsake {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.inputbox, .sbutton {
+    height: 40px; /* Explicitly set the same height for both */
+    font-size: 16px; /* Ensure font size is the same */
+    border: 1px solid #ccc; /* Same border style for consistency */
+    border-radius: 5px; /* Optional: Matching border radius */
+    box-sizing: border-box; /* Include padding and border in height calculation */
+}
+
+.inputbox {
+    padding: 0 10px; /* Adjust padding for input box */
+    width: 300px; /* Set desired width */
+}
+
+.sbutton {
+    padding: 0 20px; /* Horizontal padding for button text */
+    cursor: pointer; /* Add pointer for hover */
+    display: flex;
+    background-color: orange;
+    color: white;
+    align-items: center; /* Vertically center the button text */
+    justify-content: center; /* Horizontally center the button text */
+}
+
+.sbutton:hover {
+    background-color: #0e47f1;
+    color: white;
+}
+
+.dbuttons {
+    display: flex;
+    flex-direction: row; /* Align buttons side by side */
+    gap: 20px; /* Add space between buttons */
+    margin-top: 20px; /* Add space above the buttons */
+}
+
+.dbuttons button {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    gap: 5px; /* Space between the icon and the text */
+    font-size: 14px; /* Reduce font size */
+    padding: 8px 16px; /* Adjust padding for smaller button size */
+    border: 1px solid #ccc; /* Optional: Add border */
+    border-radius: 5px; /* Smooth corners */
+    cursor: pointer; /* Pointer cursor for hover effect */
+    background-color: #4b4b4b; /* Light background color */
+    color: white; /* Text color */
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.dbuttons button:hover {
+    background-color: orange; /* Hover background color */
+    color: white; /* Hover text color */
+}
+
+

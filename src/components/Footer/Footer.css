@@ -1,0 +1,70 @@
+.footer-div{
+    padding-top: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-div::before {
+    content: "";
+    position: absolute;
+    top: -20px; /* Position the line above the heading */
+    width: 100%; /* Full width */
+    height: 0.5px; /* Thickness of the line */
+    background-color: #e1e1e1; /* Mild gray line */
+    left: 0; /* Align to the left */
+    box-shadow: 0 2px 5px rgba(92, 92, 92, 0.5);
+}
+
+.dstarve{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 250px;
+    color: orange;
+}
+
+.cc{
+    margin-left: 250px;
+    font-size: 13px;
+}
+
+.head-elements{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    gap: 100px;
+    margin-top: 60px;
+}
+
+.space-elements{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.textdecor{
+    text-decoration: underline;
+}
+
+.opa{
+    opacity: 0.5;
+}
+
+.below-footer{
+    color: rgb(61, 61, 61);
+    font-size: 10;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.block{
+    font-size: 10px;
+}
+
+.sl{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}

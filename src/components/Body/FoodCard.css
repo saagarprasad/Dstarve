@@ -1,0 +1,64 @@
+.slider-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  
+  .food-card {
+    width: 200px;  /* Set a fixed width for the card */
+    margin: 0 10px;  /* Add space between each card */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-bottom: 20px;  /* Add gap between rows if cards wrap */
+  }
+  
+  .food-card:hover {
+    transform: translateY(-10px);  /* Slight hover effect */
+  }
+  
+  .food-card img {
+    width: 400px;  /* Ensure the image width matches the card */
+    height: 200px;  /* Maintain the aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;  /* Ensures image fully covers the area without distortion */
+  }
+  
+  .food-card h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 10px;  /* Space between image and text */
+  }
+  
+  .slick-prev, .slick-next {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .slick-prev {
+    left: -50px;
+  }
+  
+  .slick-next {
+    right: -50px;
+  }
+
+  .food-names{
+    font-weight: 400;
+    font-size: large;
+  }

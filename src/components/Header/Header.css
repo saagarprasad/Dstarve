@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 1000;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  
+  .Dstarve {
+    cursor: pointer;
+    color: orange;
+  }
+  
+  .helements {
+    display: flex;
+    gap: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: 0.3s ease;
+  }
+
+  .helements p:hover{
+    color: orange;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+    
+  }
+  
+  .categories {
+    display: flex;
+    position: relative;
+  }
+
+  .downarrow{
+    display: flex;
+    margin-top: 5px;
+  }
+  
+
+  .categories p {
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .categories li:hover {
+    color: orange; /* Only change color of the hovered element */
+    transition: color 0.3s ease;
+  }
+
+  .categories p:hover {
+    color: orange; /* Only change color of the hovered element */
+  }
+  
+  .dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position it below the "Categories" item */
+    left: 0;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    min-width: 160px;
+    padding: 10px 0;
+    z-index: 1;
+  }
+  
+  .categories:hover .dropdown {
+    display: block; /* Show dropdown when hovering over the "Categories" */
+  }
+  
+  .dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown ul li:hover {
+    background-color: #f1f1f1; /* Hover effect for items */
+  }
+  
+  .arrow {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+    position: relative; /* Add this to position child elements properly */
+  }
+  
+  
+  
+  .signup {
+    font-weight: 500;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .signup:hover {
+    background-color:  #0e47f1;
+    color: white;
+  }
+  .default-profile-pic {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 50%;
+  }
+
+  .profile-pic {
+    display: flex;
+    position: relative;
+  }
+
+  
+
+  .profile-pic p {
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .profile-pic li:hover {
+    color: orange; /* Only change color of the hovered element */
+    transition: color 0.3s ease;
+  }
+
+  .profile-pic p:hover {
+    color: orange; /* Only change color of the hovered element */
+  }
+
+
+  .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position it below the "Categories" item */
+    right: 5%;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    min-width: 200px;
+    padding: 20px 0;
+    z-index: 1;
+  }
+
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu ul li:hover {
+    background-color: #f1f1f1; /* Hover effect for items */
+  }
+
+  .profile-pic:hover .dropdown-menu{
+    display: block;
+  }
+
+  .login {
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 16px;
+  }
+  
+  .cartnumber {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+  }
+  

@@ -1,0 +1,83 @@
+.list-items{
+    display: flex;
+    margin-left: 320px;
+    margin-top: 50px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);;
+    border-radius: 10px;
+    width: 1150px;
+    height: 250px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content h2{
+    color: rgb(9, 184, 0);
+}
+
+.images{
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.dish-name{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.button{
+    margin-top: 50px;
+    margin-right: 25px;
+}
+
+.calc{
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.list-items:hover {
+    transform: scale(1.01); /* Slight zoom effect */
+}
+
+/* Focus state */
+.list-items:focus {
+    outline: none; /* Remove default focus outline */
+    border: 2px solid #ff6600; /* Add a custom border on focus */
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.6); /* Glow effect */
+}
+
+/* Hover and Focus combined */
+.list-items:hover:focus {
+    transform: scale(1.1); /* Slightly larger zoom effect */
+}
+
+
+.cartbtn {
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px; /* Smaller font size */
+    padding: 5px 5px; /* Adjust padding to control width */
+    width: 100px; /* Let width adjust based on content */
+    height: 40px; /* Fixed height for the button */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 184, 0); /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 7px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Optional: Hover effect for better interactivity */
+.cartbtn:hover {
+    background-color: orange; /* Darker blue on hover */
+}

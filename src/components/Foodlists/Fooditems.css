@@ -1,0 +1,64 @@
+/* Sidebar container */
+.sidebar-fi {
+    margin-top: 90px;
+    position: fixed; /* Fixed on the left side */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full height of the viewport */
+    width: 250px; /* Adjust to desired width */
+    background-color: #ededed; /* Dark blue-gray background */
+    color: rgb(45, 45, 45); /* White text */
+    padding: 20px; /* Space inside the sidebar */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Sidebar heading */
+.heading-fi {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffffff30; /* Subtle bottom border */
+    padding-bottom: 10px;
+}
+
+/* Sidebar sections */
+.ul-fi {
+    display: block;
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 20px 0; /* Space between sections */
+    margin-left: 2px;
+}
+
+
+.ul-fi h3 {
+    text-decoration: underline;
+    font-size: 18px;
+    margin-bottom: 10px;
+    opacity: 1;
+    color: rgb(45, 45, 45); /* Light text for section headers */
+}
+
+.ul-fi li {
+    font-size: 16px;
+    padding: 8px 10px;
+    margin: 5px 0px;
+    border-radius: 4px; /* Rounded corners for menu items */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.7;
+}
+
+/* Highlight menu items on hover */
+.ul-fi li:hover {
+    background-color: orange; /* Blue background on hover */
+    color: white; /* Ensure text remains white */
+    opacity: 1;
+}
+
+.text1{
+    margin-top: 100px;
+    margin-left: 320px;
+}
