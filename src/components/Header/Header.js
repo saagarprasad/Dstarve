@@ -16,7 +16,30 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const Header = ({size}) => {
+const Header = ({ size }) => {
+
+  const listdownnames = [
+    {
+      id: 1,
+      name: 'Full meals'
+    },
+    {
+      id: 2,
+      name: 'Ice Cream'
+    },
+    {
+      id: 3,
+      name: 'Fast Foods'
+    },
+    {
+      id: 4,
+      name: 'Tandoori'
+    },
+    {
+      id: 5,
+      name: 'Desserts'
+    }
+  ]
 
   const [userDetails, setuserDetails] = useState('');
 
@@ -59,8 +82,8 @@ const Header = ({size}) => {
     navigate('/home')
   }
 
-  const handleClicktoBiriyani = () => {
-    navigate('/biriyani')
+  const handleClicktodish = (dishname) => {
+    navigate(`/dish/${dishname}`)
   }
 
 
@@ -77,35 +100,24 @@ const Header = ({size}) => {
                 <p>Categories</p> <MdKeyboardArrowDown className='downarrow' />
                 <div className="dropdown">
                   <ul>
-                    <li>
-                      <IoMdArrowDropright /> Full Meals
-                    </li>
-                    <li>
-                      <IoMdArrowDropright /> Mini meals
-                    </li>
-                    <li>
-                      <IoMdArrowDropright /> Fast Foods
-                    </li>
-                    <li onClick={handleClicktoBiriyani}>
-                      <IoMdArrowDropright /> Biriyani
-                    </li>
-                    <li>
-                      <IoMdArrowDropright /> Drinks
-                    </li>
-                    <li>
-                      <IoMdArrowDropright /> Desserts
-                    </li>
+                    {listdownnames.map((item) => {
+                      return (
+                        <li key={item.id} onClick={() => handleClicktodish(item.name)}>
+                          <IoMdArrowDropright /> {item.name}
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </div>
               <p>Orders</p>
               <p>Restaurants</p>
-              <p>Blog</p>
+              <p onClick={() => navigate('/blog')}>Blog</p>
               <p>Contact us</p>
             </div>
             <div className="buttons">
-              {size?<button onClick={() => handleClicktoCart()} className="login" style={{ position: 'relative' }}><span className='cartnumber'>{size}</span><FaShoppingCart /> Cart</button>:<button onClick={() => handleClicktoCart()} className="login" style={{ position: 'relative' }}><FaShoppingCart /> Cart</button>}
-              
+              {size ? <button onClick={() => handleClicktoCart()} className="login" style={{ position: 'relative' }}><span className='cartnumber'>{size}</span><FaShoppingCart /> Cart</button> : <button onClick={() => handleClicktoCart()} className="login" style={{ position: 'relative' }}><FaShoppingCart /> Cart</button>}
+
               <div className="profile-pic">
                 {userDetails?.photo ? (
                   <img
@@ -142,7 +154,7 @@ const Header = ({size}) => {
                     <IoMdArrowDropright /> Full Meals
                   </li>
                   <li>
-                    <IoMdArrowDropright /> Mini meals
+                    <IoMdArrowDropright /> Ice Cream
                   </li>
                   <li>
                     <IoMdArrowDropright /> Fast Foods
@@ -151,7 +163,7 @@ const Header = ({size}) => {
                     <IoMdArrowDropright /> Biriyani
                   </li>
                   <li>
-                    <IoMdArrowDropright /> Drinks
+                    <IoMdArrowDropright /> Tandoori
                   </li>
                   <li>
                     <IoMdArrowDropright /> Desserts

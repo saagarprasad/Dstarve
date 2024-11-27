@@ -2,12 +2,12 @@ import React from 'react'
 import './Cards.css'
 
 
-const Cards = ({item, handleClicknumbertocart}) => {
+const Cards = ({ item, handleClicknumbertocart }) => {
 
-    const {Restname, datas, price, about, image} = item;
-    
+    const { Restname, datas, price, about, image } = item;
 
-    
+
+
     return (
         <>
             <div className='list-items'>
@@ -21,7 +21,7 @@ const Cards = ({item, handleClicknumbertocart}) => {
                     <p>{about}</p>
                 </div>
                 <div className='button'>
-                    <button onClick={() =>{handleClicknumbertocart(item)}} className='cartbtn'>Add to cart</button>
+                    <button onClick={() => { handleClicknumbertocart(item) }} className='cartbtn'>Add to cart</button>
                 </div>
             </div>
         </>

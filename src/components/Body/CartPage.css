@@ -53,7 +53,7 @@
 }
 
 .dishnamestyle{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -101,7 +101,10 @@
 
 .inbetween{
     display: flex;
-    gap: 250px;
+    justify-content: space-between;
+    align-items: flex-start; /* Adjust alignment if needed */
+    width: 100%; /* Ensure it spans the available width */
+    gap: 20px; /* Optional: Add spacing between items */
 }
 
 .loweropa{
@@ -139,7 +142,9 @@
 .subtotal{
     display: flex;
     margin-top: 30px;
-    margin-left: 900px;
+    margin-left: 950px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .quantitykilmabtn {
@@ -227,7 +232,13 @@
 
 .totaltext{
     font-weight: 500;
-    font-size: larger;
+    font-size: large;
+}
+
+.ptexts{
+    margin-left: 20px;
+    font-size: 27px;
+    font-weight: 600;
 }
 
 

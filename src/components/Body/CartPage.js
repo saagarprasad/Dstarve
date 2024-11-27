@@ -44,7 +44,7 @@ const CartPage = ({ cart, setCart, handleChange }) => {
                                 <div className='inbetween'>
                                     <div className='upanddowndatas'>
                                         <div className='individualitems'>
-                                            <p className='dishnamestyle'>{item.dishname}(1kg)</p>
+                                            <p className='dishnamestyle'>{item.dishname}</p>
                                             <p className='loweropa'>{item.cartdatas}</p>
                                             <h3 className='offer'><BiSolidOffer size={20} />40% OFF upto ₹70</h3>
                                         </div>

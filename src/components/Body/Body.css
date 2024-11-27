@@ -43,6 +43,10 @@
     border: 1px solid orange; /* Optional: change border color on focus */
 }
 
+.searchBox:focus::placeholder{
+    color: transparent;
+}
+
 .searchbtn {
     display: flex;
     justify-content: center;      /* Center horizontally */

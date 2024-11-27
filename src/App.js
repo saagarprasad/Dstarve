@@ -7,7 +7,7 @@ import Header from './components/Header/Header';
 import CartPage from './components/Body/CartPage';
 import { useState,useEffect } from 'react';
 import { toast } from 'react-toastify';
-
+import Blog from './components/Body/Blog';
 
 
 function App() {
@@ -71,6 +71,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path='/dish/:dishname' element={<Fooditems handleClicknumbertocart={handleClicknumbertocart} />}></Route>
           <Route path='/cartpage' element={<CartPage cart={cart} setCart={setCart} handleChange = {handleChange} />}></Route>
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>
       <ToastContainer autoClose={3000} theme="colored" /> {/* Global toast container */}

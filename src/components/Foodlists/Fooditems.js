@@ -1,11 +1,60 @@
 import React from 'react'
 import './Fooditems.css'
 import { PiCookingPotBold } from "react-icons/pi";
-import lists from '../Body/data';
+import data from '../Body/data';
 import Cards from './Cards';
+import { useParams } from 'react-router-dom';
 
 
-const Fooditems = ({handleClicknumbertocart}) => {
+const Fooditems = ({ handleClicknumbertocart }) => {
+
+    const { icecreamdata, Chickenbiriyanidata, vegMealsData, fastFoodData, Tandooridata, DessertsData, SquidFoodData } = data;
+
+    const { dishname } = useParams();
+
+    const getMenu = () => {
+        switch (dishname.toLowerCase()) {
+            case 'biriyani':
+                return Chickenbiriyanidata
+            case 'full meals':
+                return vegMealsData
+            case 'ice cream':
+                return icecreamdata
+            case 'fast foods':
+                return fastFoodData
+            case 'tandoori':
+                return Tandooridata
+            case 'desserts':
+                return DessertsData
+            case 'squid deep fry':
+                return SquidFoodData
+        }
+    }
+
+    const getDishTitle = () => {
+        switch (dishname.toLowerCase()) {
+            case 'biriyani':
+                return 'Chicken Biriyani';
+            case 'full meals':
+                return 'Veg Full Meals';
+            case 'ice cream':
+                return 'Ice Creams';
+            case 'fast foods':
+                return 'Fast Foods';
+            case 'tandoori':
+                return "Tandoori Chicken"
+            case 'desserts':
+                return "Desserts"
+            case 'squid deep fry':
+                return "Squid Fries"
+            default:
+                return 'Menu';
+
+        }
+    }
+
+    const menucard = getMenu()
+
     return (
         <>
             <div className='sidebar-fi'>
@@ -48,9 +97,9 @@ const Fooditems = ({handleClicknumbertocart}) => {
 
 
             <section>
-                <h1 className='text1'>Chicken Biriyani </h1>
-                {lists.map((item) => {
-                    return <Cards handleClicknumbertocart ={handleClicknumbertocart} key={item.id} item={item} />
+                <h1 className='text1'>{getDishTitle()}</h1>
+                {menucard.map((item) => {
+                    return <Cards handleClicknumbertocart={handleClicknumbertocart} key={item.id} item={item} />
                 })}
             </section>
             <br></br><br></br>
